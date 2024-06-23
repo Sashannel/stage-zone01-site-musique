@@ -1,4 +1,41 @@
-/* Just for example */
 h1 {
+	color: rgba(0, 0, 0, 0.249);
+}
+body{
+	background : url(https://img.freepik.com/premium-vector/modern-good-looking-dark-color-musical-background_588409-701.jpg) 
+}
+/* Enlève les puces des éléments de liste avec la classe 'btn' */
+ul li.btn {
+	
+    list-style-type: none; /* Enlève les puces */
+	display: inline-block;	
+}
+ul li.btn a{
+	text-decoration: none;
+	color: inherit; /* Garde la couleur du texte par défaut */
+}
+
+/* Optionnel : Styles généraux pour les paragraphes */
+ul li.btn a p.s {
+	color: blue;
+	padding: 10px;
+	margin: 5px;
+    background-color: rgb(0, 0, 0);
+}
+ul li.btn:hover {
+	color: blue;
+	padding: 10px;
+	margin: 5px;
+    background-color: rgb(236, 15, 15);
+	transition: 1s;
+}
+body{
 	color: red;
+}
+#titre h1{
+	color : green
+}
+img{
+	max-width: 80%;
+
 }
