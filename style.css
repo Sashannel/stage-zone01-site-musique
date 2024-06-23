@@ -2,7 +2,7 @@ h1 {
 	color: rgba(0, 0, 0, 0.249);
 }
 body{
-	background : url(https://img.freepik.com/premium-vector/modern-good-looking-dark-color-musical-background_588409-701.jpg) 
+	background-color: darkslategray;
 }
 /* Enlève les puces des éléments de liste avec la classe 'btn' */
 ul li.btn {
@@ -30,10 +30,10 @@ ul li.btn:hover {
 	transition: 1s;
 }
 body{
-	color: red;
+	color: whitesmoke
 }
 #titre h1{
-	color : green
+	color : whitesmoke;
 }
 img{
 	max-width: 80%;
