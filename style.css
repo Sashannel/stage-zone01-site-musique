@@ -1,41 +1,103 @@
-h1 {
-	color: rgba(0, 0, 0, 0.249);
-}
-body{
-	background-color: darkslategray;
-}
-/* Enlève les puces des éléments de liste avec la classe 'btn' */
-ul li.btn {
+	body{
+	background: url("https://images.chesscomfiles.com/proxy/static.vecteezy.com/system/resources/thumbnails/008/311/935/small_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector/https/5c097267db.jpg");
+	background-size: cover;
+	}
+	.HTmusique{
+	position: fixed;
+	color: whitesmoke;
+	}
+	ul{
+	right: 0;
+	position :fixed;
+	}
+	ul li.btn {
 	
-    list-style-type: none; /* Enlève les puces */
-	display: inline-block;	
-}
-ul li.btn a{
+	list-style-type: none; /* Enlève les puces */
+	display: inline-block;
+	}
+	ul li.btn a{
 	text-decoration: none;
 	color: inherit; /* Garde la couleur du texte par défaut */
-}
-
-/* Optionnel : Styles généraux pour les paragraphes */
-ul li.btn a p.s {
+	}
+	
+	/* Optionnel : Styles généraux pour les paragraphes */
+	ul li.btn a p.s {
+	color: rgb(0, 60, 255);
+	padding: 10px;
+	margin: 5px;
+	background-color: rgb(0, 0, 0);
+	}
+	ul li.btn:hover {
 	color: blue;
 	padding: 10px;
 	margin: 5px;
-    background-color: rgb(0, 0, 0);
-}
-ul li.btn:hover {
-	color: blue;
-	padding: 10px;
-	margin: 5px;
-    background-color: rgb(236, 15, 15);
+	background-color: rgb(236, 15, 15);
 	transition: 1s;
-}
-body{
-	color: whitesmoke
-}
-#titre h1{
-	color : whitesmoke;
-}
-img{
-	max-width: 80%;
+	}
+	h1.welcome{
+	bottom: 300px;
+	position :absolute/*Par défaut la position est sticky qui ne permet pas de bouger les éléments en gauche ou droite. Il faut définir la position comme relative*/
+	}
+	
+	section.image {
+	padding-top: 300px;
+	flex-wrap: nowrap;/*Nowrap êmpeche des éléments à passer à la nouvelle ligne*/
+	font-size: 0;
+	border: 1px solid blue;
+	
+	}
+	section.image img.image1{
+	width: 300px;
+	height: 150px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	}
+	h3{
+	color: aqua;
+	top: 435px;
+	position: absolute;
+	}
+	#id {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Deux colonnes de taille égale */
+	gap: 10px; /* Espace entre les sections */
+	}
+	.sepa{
+	padding: 10px;
+	border: 1px solid blue;
+	}
+	h1.welcome{
+	color : red
+	}
 
-}
+	.glow {
+		font-size: 45px;
+		color: #fff;
+		text-align: center;
+		-webkit-animation: glow 1s ease-in-out infinite alternate;
+		-moz-animation: glow 1s ease-in-out infinite alternate;
+		animation: glow 1s ease-in-out infinite alternate;
+	}
+
+	@-webkit-keyframes glow {
+		from {
+		  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+		}
+		to {
+		  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+		}
+	  }
+
+	.pablo {
+		height: 300px;
+		width: 700px;
+	}
+
+	p {
+		color: #e6e4d8;
+	}
+
+	h2 {
+		color: #e6e4d8;
+	}
