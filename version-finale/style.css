@@ -1,0 +1,166 @@
+	body{
+	background: url("https://images.chesscomfiles.com/proxy/static.vecteezy.com/system/resources/thumbnails/008/311/935/small_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector/https/5c097267db.jpg");
+	background-size: cover;
+	}
+	.HTmusique{
+	position: fixed;
+	color: whitesmoke;
+	}
+	ul{
+	right: 0;
+	position :fixed;
+	}
+	ul li.btn {
+	
+	list-style-type: none; /* Enlève les puces */
+	display: inline-block;
+	}
+	ul li.btn a{
+	text-decoration: none;
+	color: inherit; /* Garde la couleur du texte par défaut */
+	}
+	
+	/* Optionnel : Styles généraux pour les paragraphes */
+	ul li.btn a p.s {
+	color: rgb(2, 2, 2);
+	padding: 10px;
+	margin: 5px;
+	background-color: rgb(156, 156, 156);
+	border-radius: 15%;
+	}
+	ul li.btn:hover {
+	color: rgb(155, 155, 161);
+	padding: 10px;
+	margin: 5px;
+	background-color: rgb(101, 145, 240);
+	transition: 0.75s;
+	border-radius: 15%;
+	}
+	h1.welcome{
+	bottom: 300px;
+	position :absolute/*Par défaut la position est sticky qui ne permet pas de bouger les éléments en gauche ou droite. Il faut définir la position comme relative*/
+	}
+	
+	section.image {
+	padding-top: 300px;
+	flex-wrap: nowrap;/*Nowrap êmpeche des éléments à passer à la nouvelle ligne*/
+	font-size: 0;
+	border: 1px solid blue;
+	
+	}
+	section.image img.image1{
+	width: 300px;
+	height: 150px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	}
+	h3{
+	color: aqua;
+	top: 435px;
+	position: absolute;
+	}
+	#id {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Deux colonnes de taille égale */
+	gap: 10px; /* Espace entre les sections */
+	}
+	.sepa{
+	padding: 10px;
+	border: 1px solid blue;
+	}
+	h1.welcome{
+	color : lightblue;
+	}
+
+	.glow {
+		font-size: 45px;
+		color: #fff;
+		text-align: center;
+		-webkit-animation: glow 1s ease-in-out infinite alternate;
+		-moz-animation: glow 1s ease-in-out infinite alternate;
+		animation: glow 1s ease-in-out infinite alternate;
+	}
+
+	@-webkit-keyframes glow {
+		from {
+		  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+		}
+		to {
+		  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+		}
+	  }
+
+	.pablo {
+		height: 300px;
+		width: 700px;
+	}
+
+	p {
+		color: #e6e4d8;
+	}
+
+	h2 {
+		color: #e6e4d8;
+	}
+
+	.btnsaudio {
+		display: inline-block;
+		text-decoration: none;
+		list-style-type: none;
+		margin: 5px;
+		padding: 10px;
+		color: blue;
+	}
+
+	.active {
+		color: aqua;
+	}
+
+#meny > li,
+#meny > li li {
+position: relative;
+display:inline-block;
+width: 110px;
+padding: 6px 15px;
+background-color: #777;
+background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
+}
+#meny > li li { background: transparent none; }
+#meny > li li a { color: #444; }
+#meny > li li:hover { background:#eee; }
+#meny > li:first-child {
+border-right: 1px solid #777;
+border-radius: 8px 0 0 8px;
+}
+#meny > li + li {
+border-left: 1px solid #aaa;
+border-right: 1px solid #777;
+}
+#meny > li:last-child {
+border-right: 0;
+border-left: 1px solid #aaa;
+border-radius: 0 8px 8px 0 ;
+}
+#meny > li:hover {
+background-color: #999;
+
+}
+/* (presque) fin de la partie positionnement/déco */
+/* dans cette déclaration, on fixe le max-height */
+#meny ul {
+position: absolute;
+top: 2em; left: 0;
+max-height:0em;
+margin: 0; padding: 0;
+background-color: #ddd;
+
+overflow: hidden;
+transition: 0.75s max-height 0.75s;
+border-radius: 0 0 8px 8px;
+}
+/* ici on change la valeur de max-height au :hover */
+#meny > li:hover ul {
+/* à adapter, le minimum est le meilleur mais voyez large 😉 */
+max-height: 13em;
+}
